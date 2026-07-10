@@ -1,0 +1,26 @@
+:root {
+    /* Main Brand Colors */
+    --primary-color: #BC6C25;      /* دکمه‌ها، لینک‌های مهم، CTA */
+    --secondary-color: #DDA15E;    /* جزئیات، hover، آیکون‌ها */
+
+    /* Background Colors */
+    --background-color: #FEFAE0;   /* بک‌گراند اصلی سایت */
+    --section-bg: #F8F1D8;         /* بک‌گراند سکشن‌های متفاوت */
+    --card-bg: #FFFFFF;            /* کارت‌ها */
+
+    /* Dark Colors */
+    --dark-color: #283618;         /* navbar، footer، بخش‌های تیره */
+    --accent-color: #606C38;       /* badge، overlay، عناصر فرعی */
+
+    /* Text Colors */
+    --heading-color: #283618;      /* عنوان‌ها */
+    --text-color: #4A4A4A;         /* متن معمولی */
+    --light-text: #FEFAE0;         /* متن روی بک‌گراند تیره */
+
+    /* Border & Shadow */
+    --border-color: rgba(40, 54, 24, 0.15);
+    --shadow: 0 10px 30px rgba(40, 54, 24, 0.12);
+
+    /* Effects */
+    --transition: all 0.3s ease;
+}
