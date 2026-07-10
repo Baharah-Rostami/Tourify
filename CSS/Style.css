@@ -362,3 +362,610 @@
 
 
 }
+
+
+/* ==========================================
+   TOUR GLASS SECTION
+========================================== */
+
+
+.tour-glass-section {
+
+    padding: 110px 0;
+
+    background: var(--background-color);
+
+    overflow: hidden;
+
+}
+
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+
+.tour-glass-header {
+
+    max-width: 750px;
+
+    margin: 0 auto 70px;
+
+}
+
+
+.tour-glass-tag {
+
+    display: inline-block;
+
+    padding: 8px 24px;
+
+    border-radius: 50px;
+
+    background: rgba(40, 54, 24, .08);
+
+    color: var(--accent-color);
+
+    font-size: .85rem;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+
+
+.tour-glass-title {
+
+    margin-top: 20px;
+
+    color: var(--heading-color);
+
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+
+    font-weight: 800;
+
+}
+
+
+
+.tour-glass-text {
+
+    margin-top: 15px;
+
+    color: var(--text-color);
+
+    line-height: 1.8;
+
+}
+
+
+
+
+
+
+/* ==========================================
+   CARD
+========================================== */
+
+
+.tour-glass-card {
+
+    height: 430px;
+
+    position: relative;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transform-style: preserve-3d;
+
+
+    opacity: 0;
+
+    transform: translateY(60px);
+
+
+    transition:
+        transform .8s ease,
+        opacity .8s ease;
+
+}
+
+
+
+.tour-glass-card.show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+
+.tour-glass-card>img {
+
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+
+    transition:
+        transform 1s ease;
+
+
+}
+
+
+
+.tour-glass-card:hover>img {
+
+    transform: scale(1.1);
+
+}
+
+
+
+
+
+
+/* DARK LUXURY OVERLAY */
+
+
+.tour-glass-card::before {
+
+
+    content: "";
+
+
+    position: absolute;
+
+
+    inset: 0;
+
+
+    background:
+        linear-gradient(to top,
+            rgba(40, 54, 24, .9),
+            rgba(40, 54, 24, .15));
+
+
+    z-index: 1;
+
+
+}
+
+
+
+
+
+
+/* MOVING LIGHT EFFECT */
+
+
+.tour-glass-card::after {
+
+
+    content: "";
+
+
+    position: absolute;
+
+
+    width: 150%;
+
+    height: 40%;
+
+
+    top: -30%;
+
+    left: -30%;
+
+
+    background:
+        linear-gradient(120deg,
+            transparent,
+            rgba(221, 161, 94, .35),
+            transparent);
+
+
+    transform: rotate(25deg);
+
+
+    transition: .8s;
+
+
+    z-index: 2;
+
+
+}
+
+
+
+
+.tour-glass-card:hover::after {
+
+
+    top: 120%;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================================
+   NUMBER
+========================================== */
+
+
+.tour-glass-number {
+
+
+    position: absolute;
+
+
+    top: 25px;
+
+    right: 25px;
+
+
+    z-index: 3;
+
+
+    font-size: 3rem;
+
+
+    font-weight: 800;
+
+
+    color: rgba(254, 250, 224, .35);
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================================
+   AIRPLANE
+========================================== */
+
+
+.tour-glass-plane {
+
+
+    position: absolute;
+
+
+    top: 90px;
+
+    right: 35px;
+
+
+    z-index: 3;
+
+
+    color: var(--secondary-color);
+
+
+    font-size: 1.5rem;
+
+
+    animation:
+        tourPlane 3s infinite ease-in-out;
+
+
+}
+
+
+
+@keyframes tourPlane {
+
+
+    0%,
+    100% {
+
+        transform: translateY(0) rotate(-10deg);
+
+    }
+
+
+    50% {
+
+        transform: translateY(-18px) rotate(-10deg);
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================================
+   GLASS CONTENT
+========================================== */
+
+
+.tour-glass-content {
+
+
+    position: absolute;
+
+
+    left: 20px;
+
+    right: 20px;
+
+    bottom: 20px;
+
+
+    z-index: 4;
+
+
+    padding: 25px;
+
+
+    border-radius: 25px;
+
+
+    background:
+        rgba(254, 250, 224, .14);
+
+
+    backdrop-filter: blur(18px);
+
+
+    border:
+
+        1px solid rgba(255, 255, 255, .25);
+
+
+
+    color: white;
+
+
+
+    transition: .5s ease;
+
+
+}
+
+
+
+
+.tour-glass-card:hover .tour-glass-content {
+
+
+    transform: translateY(-15px);
+
+
+    background:
+        rgba(40, 54, 24, .45);
+
+
+}
+
+
+
+
+
+
+
+.tour-glass-content h3 {
+
+
+    font-size: 1.5rem;
+
+    font-weight: 700;
+
+
+    margin-bottom: 18px;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================================
+   INFO
+========================================== */
+
+
+.tour-glass-info {
+
+
+    display: flex;
+
+
+    gap: 18px;
+
+
+    flex-wrap: wrap;
+
+
+    font-size: .9rem;
+
+
+}
+
+
+
+.tour-glass-info span {
+
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+
+}
+
+
+
+.tour-glass-info i {
+
+
+    color: var(--secondary-color);
+
+
+}
+
+
+
+
+
+
+
+/* ==========================================
+   PRICE + BUTTON
+========================================== */
+
+
+.tour-glass-bottom {
+
+
+    display: flex;
+
+
+    justify-content: space-between;
+
+
+    align-items: center;
+
+
+    margin-top: 20px;
+
+
+}
+
+
+
+.tour-glass-bottom strong {
+
+
+    font-size: 1.5rem;
+
+
+    color: var(--secondary-color);
+
+
+}
+
+
+
+
+.tour-glass-bottom a {
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    gap: 8px;
+
+
+    text-decoration: none;
+
+
+    color: white;
+
+
+    font-size: .9rem;
+
+
+    transition: .3s;
+
+
+}
+
+
+
+.tour-glass-bottom a:hover {
+
+
+    color: var(--secondary-color);
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+
+@media(max-width:992px) {
+
+
+    .tour-glass-card {
+
+        height: 450px;
+
+    }
+
+
+}
+
+
+
+@media(max-width:576px) {
+
+
+    .tour-glass-section {
+
+        padding: 80px 0;
+
+    }
+
+
+
+    .tour-glass-card {
+
+        height: 430px;
+
+    }
+
+
+}
