@@ -1,210 +1,364 @@
-:root {
-    /* Main Brand Colors */
-    --primary-color: #BC6C25;
-    /* دکمه‌ها، لینک‌های مهم، CTA */
-    --secondary-color: #DDA15E;
-    /* جزئیات، hover، آیکون‌ها */
+/* ==========================================
+   TOURIFY - TOUR HERO SECTION
+   ========================================== */
 
-    /* Background Colors */
-    --background-color: #FEFAE0;
-    /* بک‌گراند اصلی سایت */
-    --section-bg: #F8F1D8;
-    /* بک‌گراند سکشن‌های متفاوت */
-    --card-bg: #FFFFFF;
-    /* کارت‌ها */
 
-    /* Dark Colors */
-    --dark-color: #283618;
-    /* navbar، footer، بخش‌های تیره */
-    --accent-color: #606C38;
-    /* badge، overlay، عناصر فرعی */
+/* HERO MAIN */
 
-    /* Text Colors */
-    --heading-color: #283618;
-    /* عنوان‌ها */
-    --text-color: #4A4A4A;
-    /* متن معمولی */
-    --light-text: #FEFAE0;
-    /* متن روی بک‌گراند تیره */
+.tour-hero {
+    position: relative;
+    min-height: 90vh;
 
-    /* Border & Shadow */
-    --border-color: rgba(40, 54, 24, 0.15);
-    --shadow: 0 10px 30px rgba(40, 54, 24, 0.12);
+    background-image: url("../assets/img/hero6.jpg");
+    background-size: cover;
+    background-position: center;
 
-    /* Effects */
-    --transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    animation: tourImageZoom 12s ease-in-out infinite alternate;
+}
+
+
+/* DARK OVERLAY */
+
+.tour-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(90deg,
+            rgba(40, 54, 24, 0.95),
+            rgba(40, 54, 24, 0.75),
+            rgba(40, 54, 24, 0.45));
+}
+
+
+/* CONTENT */
+
+.tour-hero-content {
+
+    position: relative;
+    z-index: 2;
+
+    max-width: 750px;
+
+    color: #FEFAE0;
+
+}
+
+
+/* SMALL LABEL */
+
+.tour-hero-tag {
+
+    display: inline-block;
+
+    padding: 8px 22px;
+
+    margin-bottom: 20px;
+
+    border-radius: 50px;
+
+    background:
+        rgba(221, 161, 94, 0.18);
+
+    color: #DDA15E;
+
+    font-size: 0.95rem;
+
+    letter-spacing: 1px;
+
+    backdrop-filter: blur(8px);
+
+    animation: tourFadeUp .8s ease forwards;
+
+}
+
+
+
+/* TITLE */
+
+.tour-hero-title {
+
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+
+    font-weight: 800;
+
+    line-height: 1.15;
+
+    margin-bottom: 20px;
+
+    opacity: 0;
+
+    animation:
+        tourFadeUp .8s ease .15s forwards;
+
+}
+
+
+
+/* TEXT */
+
+.tour-hero-text {
+
+    max-width: 600px;
+
+    color:
+        rgba(254, 250, 224, 0.85);
+
+    font-size: 1.15rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+
+    opacity: 0;
+
+
+    animation:
+        tourFadeUp .8s ease .3s forwards;
+
+}
+
+
+
+
+/* BUTTON */
+
+.tour-hero-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+
+    padding: 14px 38px;
+
+
+    border-radius: 50px;
+
+
+    background: #BC6C25;
+
+
+    color: #FEFAE0;
+
+
+    text-decoration: none;
+
+
+    font-weight: 600;
+
+
+    transition: all .35s ease;
+
+
+    box-shadow:
+        0 10px 25px rgba(188, 108, 37, .35);
+
+
+
+    opacity: 0;
+
+
+    animation:
+        tourFadeUp .8s ease .45s forwards;
+
+}
+
+
+
+.tour-hero-btn:hover {
+
+
+    background: #DDA15E;
+
+
+    color: #283618;
+
+
+    transform:
+        translateY(-6px);
+
+
+    box-shadow:
+        0 18px 35px rgba(221, 161, 94, .45);
+
+
+}
+
+
+
+/* DECORATIVE FLOATING ELEMENT */
+
+.tour-hero::after {
+
+
+    content: "";
+
+
+    position: absolute;
+
+
+    width: 450px;
+
+
+    height: 450px;
+
+
+    right: -150px;
+
+
+    bottom: -150px;
+
+
+    background:
+        rgba(221, 161, 94, .12);
+
+
+    border-radius: 50%;
+
+
+    animation:
+        tourFloat 8s infinite ease-in-out;
+
+
 }
 
 
 
 /* ==========================================
-   TOUR HERO SECTION
+   ANIMATIONS
    ========================================== */
 
-.tour-hero {
-    position: relative;
-    min-height: 90vh;
-    background-image: url("../../Tourify/assets/img/hero6.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-}
 
-.tour-hero-overlay {
-    position: absolute;
-    inset: 0;
-    background:
-        linear-gradient(
-            90deg,
-            rgba(40, 54, 24, 0.88),
-            rgba(40, 54, 24, 0.45),
-            rgba(40, 54, 24, 0.25)
-        );
-}
+@keyframes tourFadeUp {
 
-
-
-.tour-hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 750px;
-    color: #FEFAE0;
-    animation: tourHeroFade 1s ease forwards;
-}
-
-
-.tour-hero-tag {
-    display: inline-block;
-    background: rgba(221, 161, 94, 0.18);
-    color: #DDA15E;
-    padding: 8px 22px;
-    border-radius: 50px;
-    font-size: 0.95rem;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-    backdrop-filter: blur(8px);
-}
-
-
-
-.tour-hero-title {
-    font-size: clamp(2.5rem, 5vw, 4.5rem);
-    font-weight: 800;
-    line-height: 1.15;
-    margin-bottom: 20px;
-}
-
-
-.tour-hero-text {
-    color: rgba(254, 250, 224, 0.85);
-    font-size: 1.15rem;
-    line-height: 1.8;
-    max-width: 600px;
-    margin-bottom: 35px;
-}
-
-
-.tour-hero-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 14px 35px;
-    border-radius: 50px;
-
-    background: #BC6C25;
-    color: #FEFAE0;
-
-    text-decoration: none;
-    font-weight: 600;
-
-    transition: all 0.35s ease;
-    box-shadow: 0 10px 25px rgba(188, 108, 37, 0.3);
-}
-
-
-.tour-hero-btn:hover {
-    background: #DDA15E;
-    color: #283618;
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(221, 161, 94, 0.4);
-}
-
-.tour-hero::after {
-    content: "";
-    position: absolute;
-    width: 450px;
-    height: 450px;
-    right: -150px;
-    bottom: -150px;
-
-    background: rgba(221, 161, 94, 0.12);
-    border-radius: 50%;
-
-    animation: tourFloat 8s infinite ease-in-out;
-}
-
-
-
-@keyframes tourHeroFade {
 
     from {
+
         opacity: 0;
-        transform: translateY(40px);
+
+        transform:
+            translateY(40px);
+
     }
+
 
     to {
+
         opacity: 1;
-        transform: translateY(0);
+
+        transform:
+            translateY(0);
+
     }
 
+
 }
+
+
+
+@keyframes tourImageZoom {
+
+
+    from {
+
+        background-size: 100%;
+
+    }
+
+
+    to {
+
+        background-size: 110%;
+
+    }
+
+
+}
+
 
 
 @keyframes tourFloat {
 
+
     0%,
     100% {
-        transform: translateY(0);
+
+        transform:
+            translateY(0);
+
     }
 
+
     50% {
-        transform: translateY(-30px);
+
+        transform:
+            translateY(-30px);
+
     }
+
 
 }
 
 
 
 
-@media (max-width: 768px) {
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+
+@media(max-width:768px) {
+
 
     .tour-hero {
+
         min-height: 80vh;
+
         background-position: center;
+
     }
+
 
 
     .tour-hero-content {
+
         text-align: center;
+
         margin: auto;
+
     }
 
-
-    .tour-hero-text {
-        font-size: 1rem;
-    }
 
 
     .tour-hero-title {
+
         font-size: 2.4rem;
+
     }
+
+
+
+    .tour-hero-text {
+
+        font-size: 1rem;
+
+    }
+
 
 
     .tour-hero-btn {
+
         padding: 13px 30px;
+
     }
+
 
 }
