@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/desDetails.css">
+    <title>Destination Details</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fa-solid fa-earth-americas"></i>
+                Tourify
+            </a>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">
+                            Destinations
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a class="dropdown-item" href="Destinations.html">Destinations </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="DestinationsDetail.html">Destination Details</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="TourPackages.html">Tour Packages </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gallery.html">Gallery </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+
+                            More
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="About.html">About</a></li>
+                            <li><a class="dropdown-item" href="Contact.html">Contact</a></li>
+                            <li><a class="dropdown-item" href="Notfound.html">404</a></li>
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+                <a href="#" class="book-btn"> Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="details-hero">
+        <div class="hero-overlay"></div>
+        <div class="container position-relative">
+            <div class="row align-items-center gy-5">
+
+                <!-- LEFT -->
+                <div class="col-lg-7">
+                    <span class="hero-subtitle">
+                        Explore Every Journey
+                    </span>
+
+                    <h1 class="hero-title">
+                        Destination Details
+                    </h1>
+
+                    <p class="hero-text">
+                        Discover breathtaking destinations, travel tips, cultural highlights,
+                        local attractions and everything you need to plan your perfect adventure.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="Contact.html" class="hero-btn">Explore Now</a>
+
+                        <a href="TourPackages.html" class="outline-btn">View Packages</a>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT -->
+
+                <div class="col-lg-5">
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Destinations</p>
+                        </div>
+
+                        <div class="stat">
+                            <h3>25</h3>
+                            <p>Countries</p>
+                        </div>
+
+                        <div class="stat">
+                            <h3>100+</h3>
+                            <p>Tours</p>
+                        </div>
+
+                        <div class="stat">
+                            <h3>4.9★</h3>
+                            <p>Traveler Rating</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categories -->
+
+            <div class="hero-categories">
+
+                <div class="category">
+                    <i class="fa-solid fa-umbrella-beach"></i>
+                    <span>Beach</span>
+                </div>
+
+                <div class="category">
+                    <i class="fa-solid fa-mountain"></i>
+                    <span>Mountain</span>
+                </div>
+
+                <div class="category">
+                    <i class="fa-solid fa-city"></i>
+                    <span>City</span>
+                </div>
+
+                <div class="category">
+                    <i class="fa-solid fa-tree"></i>
+                    <span>Nature</span>
+                </div>
+
+                <div class="category">
+                    <i class="fa-solid fa-landmark"></i>
+                    <span>Culture</span>
+                </div>
+
+                <div class="category">
+                    <i class="fa-solid fa-water"></i>
+                    <span>Lake</span>
+                </div>
+
+                <div class="category">
+                    <i class="fa-solid fa-campground"></i>
+                    <span>Camping</span>
+                </div>
+
+                <div class="category">
+                    <i class="fa-solid fa-ship"></i>
+                    <span>Cruise</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="about-destination py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- Image -->
+                <div class="col-lg-6 reveal-left">
+                    <div class="about-image">
+                        <img src="./images/destinationsImages/greece.jfif" alt="Destination"
+                            class="img-fluid rounded-4">
+                        <div class="experience-card">
+                            <h3>10+</h3>
+                            <p>Years Of Travel</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="col-lg-6 reveal-right">
+
+                    <span class="about-label">
+                        About Destination
+                    </span>
+
+                    <h2>
+                        Discover The Hidden Beauty Of
+                        <span>Your Destination</span>
+                    </h2>
+
+                    <p>
+                        Explore breathtaking landscapes, rich history,
+                        and unforgettable experiences. This destination
+                        combines natural beauty, culture, and adventure
+                        to create a journey you will remember forever.
+                    </p>
+
+                    <p>
+                        Walk through historical places, experience local
+                        traditions, and enjoy peaceful moments surrounded
+                        by incredible scenery.
+                    </p>
+
+                    <div class="features">
+
+                        <div class="feature-item">
+                            <i class="bi bi-map"></i>
+                            <div>
+                                <h6>Beautiful Places</h6>
+                                <small>Unique landscapes</small>
+                            </div>
+                        </div>
+
+
+                        <div class="feature-item">
+                            <i class="bi bi-camera"></i>
+                            <div>
+                                <h6>Photography</h6>
+                                <small>Perfect memories</small>
+                            </div>
+                        </div>
+
+
+                        <div class="feature-item">
+                            <i class="bi bi-globe"></i>
+                            <div>
+                                <h6>Local Experience</h6>
+                                <small>Authentic culture</small>
+                            </div>
+                        </div>
+
+
+                        <div class="feature-item">
+                            <i class="bi bi-star"></i>
+                            <div>
+                                <h6>Top Destination</h6>
+                                <small>Loved by travelers</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <a href="#" class="tour-btn">
+                        Discover More
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Travel Information Section -->
+    <section class="travel-information py-5">
+        <div class="travel-shape shape-one"></div>
+        <div class="travel-shape shape-two"></div>
+        <div class="container position-relative">
+            <div class="section-header text-center mb-5 reveal-up">
+                <span class="section-label">
+                    Travel Guide
+                </span>
+
+                <h2>
+                    Everything You Need To Know
+                </h2>
+
+                <p>
+                    Prepare your journey with important information before exploring this destination.
+                </p>
+
+            </div>
+
+
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="travel-modern-card reveal-up">
+
+                        <div class="travel-icon">
+                            <i class="fa-solid fa-calendar"></i>
+                        </div>
+
+                        <h5>
+                            Best Time
+                        </h5>
+
+                        <p>
+                            Visit during the perfect season for comfortable weather and amazing views.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="travel-modern-card reveal-up">
+
+                        <div class="travel-icon">
+                            <i class="fa-solid fa-temperature-half"></i>
+                        </div>
+
+                        <h5>
+                            Weather
+                        </h5>
+
+                        <p>
+                            Enjoy pleasant conditions suitable for exploring and outdoor activities.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="travel-modern-card reveal-up">
+
+                        <div class="travel-icon">
+                            <i class="fa-solid fa-route"></i>
+                        </div>
+
+                        <h5>
+                            Transport
+                        </h5>
+
+                        <p>
+                            Easy transportation options make your journey smooth and comfortable.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="travel-modern-card reveal-up">
+
+                        <div class="travel-icon">
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </div>
+
+                        <h5>
+                            Culture
+                        </h5>
+
+                        <p>
+                            Experience local traditions, food, and unforgettable moments.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Map Section -->
+    <section class="location-section py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- Map -->
+                <div class="col-lg-7 reveal-left">
+                    <div class="map-wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18..." allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Information -->
+                <div class="col-lg-5 reveal-right">
+
+                    <span class="section-label">
+                        Find Us
+                    </span>
+                    <h2>
+                        Location &
+                        <span>Travel Route</span>
+                    </h2>
+
+                    <p>
+                        Discover the exact location of this destination
+                        and plan your journey easily with our travel guide.
+                        Our team helps you reach every amazing place safely
+                        and comfortably.
+                    </p>
+                    <div class="location-info">
+                        <div class="location-item">
+
+                            <div class="location-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+
+                            <div>
+                                <h6>
+                                    Destination
+                                </h6>
+
+                                <p>
+                                    Herat, Afghanistan
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="location-item">
+
+                            <div class="location-icon">
+                                <i class="fa-solid fa-road"></i>
+                            </div>
+
+                            <div>
+                                <h6>
+                                    Travel Distance
+                                </h6>
+
+                                <p>
+                                    Easy access by road
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="location-item">
+
+                            <div class="location-icon">
+                                <i class="fa-solid fa-compass"></i>
+                            </div>
+
+                            <div>
+                                <h6>
+                                    Best Route
+                                </h6>
+
+                                <p>
+                                    Guided transportation available
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <a href="#" class="location-btn">
+                        Open Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Traveler Reviews Section -->
+<section class="traveler-reviews py-5">
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="section-header text-center mb-5 reveal-up">
+
+            <span class="section-label">
+                Traveler Experiences
+            </span>
+
+            <h2>
+                What Our Travelers Say
+            </h2>
+
+            <p>
+                Discover why thousands of travelers choose Tourify for their unforgettable journeys.
+            </p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Review Card -->
+            <div class="col-lg-4 col-md-6">
+
+                <div class="review-card reveal-up">
+
+
+                    <div class="review-top">
+                        <img 
+                        src="./images/destinationsImages/user.avif"
+                        alt="Traveler"
+                        >
+                        <div>
+                            <h5>
+                                Sarah Johnson
+                            </h5>
+
+                            <span>
+                                United States
+                            </span>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="stars">
+
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                    </div>
+
+                    <p>
+                        "The journey was incredible. The places were beautiful,
+                        the guides were helpful, and every moment was memorable."
+                    </p>
+                    <div class="quote-icon">
+
+                     <i class="fa-solid fa-quote-right"></i>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="col-lg-4 col-md-6">
+                <div class="review-card reveal-up">
+                    <div class="review-top">
+                        <img 
+                        src="./images/destinationsImages/user.avif"
+                        alt="Traveler"
+                        >
+
+                        <div>
+
+                            <h5>
+                                David Wilson
+                            </h5>
+
+                            <span>
+                                United Kingdom
+                            </span>
+                        </div>
+                    </div>
+                    <div class="stars">
+
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                    </div>
+                    <p>
+                        "Amazing experience from start to finish.
+                        Tourify made everything simple and enjoyable."
+                    </p>
+
+
+                    <div class="quote-icon">
+
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="review-card reveal-up">
+                    <div class="review-top">
+
+                        <img 
+                        src="./images/destinationsImages/user.avif"
+                        alt="Traveler"
+                        >
+                        <div>
+                            <h5>
+                                Emma Brown
+                            </h5>
+
+                            <span>
+                                Canada
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="stars">
+
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                    </div>
+
+                    <p>
+                        "A perfect combination of adventure and culture.
+                        I will definitely travel with Tourify again."
+                    </p>
+
+                    <div class="quote-icon">
+
+                        <i class="fa-solid fa-quote-right"></i>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-4">
+                <!-- Brand -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" class="footer-brand">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        Tourify
+                    </a>
+
+                    <p class="footer-text">
+                        Explore the world with unforgettable journeys.
+                        Discover amazing destinations and create memories
+                        that last forever.
+                    </p>
+
+
+                    <div class="social-links">
+
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+
+                    <h5>Quick Links</h5>
+
+                    <ul>
+
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Explore -->
+                <div class="col-lg-3 col-md-6">
+
+                    <h5>Explore</h5>
+
+                    <ul>
+
+                        <li>
+                            <a href="destinations.html">
+                                Destinations
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="destination-details.html">
+                                Destination Details
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="tour-packages.html">
+                                Tour Packages
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="404.html">
+                                404 Page
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="col-lg-3 col-md-6">
+
+                    <h5>Contact</h5>
+
+                    <ul class="contact-info">
+
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Herat, Afghanistan
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            info@tourify.com
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            +93 700 000 000
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="footer-bottom">
+                <p>
+                    © 2026 Tourify. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
