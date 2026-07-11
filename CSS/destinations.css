@@ -163,8 +163,7 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-
-    padding: 150px 0 70px;
+    padding: 120px 0 70px;
     overflow: hidden;
     background:
     linear-gradient(rgba(18,18,18,.65),rgba(18,18,18,.7)),
