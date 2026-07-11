@@ -144,7 +144,6 @@
 }
 
 @keyframes dropdown{
-
     from{
         opacity:0;
         transform:translateY(20px);
@@ -186,21 +185,16 @@
 
 }
 .footer-brand:hover{
-
     color:var(--secondary-color);
     transform:translateY(-3px);
-
 }
 
 .footer-text{
-
     color:rgba(254,250,224,.75);
     line-height:1.8;
-
 }
 
 .footer h5{
-
     color:var(--secondary-color);
     font-size:1.2rem;
     margin-bottom:25px;
@@ -209,7 +203,6 @@
 }
 
 .footer h5::after{
-
     content:"";
     display:block;
     width:35px;
@@ -220,10 +213,8 @@
 }
 
 .footer ul{
-
     list-style:none;
     padding:0;
-
 }
 
 .footer ul li{
@@ -232,7 +223,6 @@
 }
 
 .footer ul li a{
-
     color:rgba(254,250,224,.8);
     text-decoration:none;
     transition:.3s;
@@ -240,7 +230,6 @@
 }
 
 .footer ul li a:hover{
-
     color:var(--secondary-color);
     padding-left:8px;
 }
@@ -253,7 +242,6 @@
 
 }
 .social-links a{
-
     width:42px;
     height:42px;
     display:flex;
@@ -266,7 +254,6 @@
 
 }
 .social-links a:hover{
-
     background:var(--primary-color);
     transform:translateY(-5px);
 }
@@ -290,23 +277,19 @@
     border-top:1px solid rgba(254,250,224,.15);
 }
 .footer-bottom p{
-
     margin:0;
     color:rgba(254,250,224,.7);
 }
 @media(max-width:768px){
     .footer{
-
         text-align:center;
 
     }
 
     .social-links{
-
         justify-content:center;
 
     }
-
     .contact-info li{
 
         justify-content:center;

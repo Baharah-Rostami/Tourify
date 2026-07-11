@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./CSS/destinations.css">
+    <title>Destinations</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fa-solid fa-earth-americas"></i>
+                Tourify
+            </a>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">
+                            Destinations
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a class="dropdown-item" href="Destinations.html">Destinations </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="DestinationsDetail.html">Destination Details</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="TourPackages.html">Tour Packages </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gallery.html">Gallery </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+
+                            More
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="About.html">About</a></li>
+                            <li><a class="dropdown-item" href="Contact.html">Contact</a></li>
+                            <li><a class="dropdown-item" href="Notfound.html">404</a></li>
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+                <a href="#" class="book-btn"> Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="destination-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content text-center">
+                <span class="hero-subtitle">Explore the World</span>
+
+                <h1 class="hero-title">
+                    Discover Amazing <br>
+                    Destinations
+                </h1>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-destinations">
+        <div class="container">
+
+            <h3 class="text-white mb-4">
+                Top Vacation Destinations
+            </h3>
+
+            <div class="swiper destinationSwiper">
+
+                <div class="swiper-wrapper">
+
+                    <!-- Paris -->
+                    <div class="swiper-slide">
+                        <div class="destination-image">
+                            <img src="./images/destinationsImages/paris.jfif" alt="Paris">
+                            <div class="destination-overlay">
+                                <h5>Paris, France</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Istanbul -->
+                    <div class="swiper-slide">
+                        <div class="destination-image">
+                            <img src="./images/destinationsImages/İstanbul.jfif" alt="Istanbul">
+                            <div class="destination-overlay">
+                                <h5>Istanbul, Turkey</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Egypt -->
+                    <div class="swiper-slide">
+                        <div class="destination-image">
+                            <img src="./images/destinationsImages/Giza-Egypt.jfif" alt="Giza">
+                            <div class="destination-overlay">
+                                <h5>Giza, Egypt</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Greece -->
+                    <div class="swiper-slide">
+                        <div class="destination-image">
+                            <img src="./images/destinationsImages/greece.jfif" alt="Santorini">
+                            <div class="destination-overlay">
+                                <h5>Santorini, Greece</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Switzerland -->
+                    <div class="swiper-slide">
+                        <div class="destination-image">
+                            <img src="./images/destinationsImages/zurich.jfif" alt="Zurich">
+                            <div class="destination-overlay">
+                                <h5>Zurich, Switzerland</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- China -->
+                    <div class="swiper-slide">
+                        <div class="destination-image">
+                            <img src="./images/destinationsImages/china.jfif" alt="Guizhou">
+                            <div class="destination-overlay">
+                                <h5>Guizhou, China</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Navigation -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="destinations-section py-5">
+
+        <div class="plane plane1">
+            <i class="fa-solid fa-plane"></i>
+        </div>
+
+        <div class="plane plane2">
+            <i class="fa-solid fa-plane"></i>
+        </div>
+
+        <div class="plane plane3">
+            <i class="fa-solid fa-plane"></i>
+        </div>
+        <div class="container">
+
+            <div class="section-title text-center mb-5">
+                <span>Discover Places</span>
+                <h2>Popular Destinations</h2>
+                <p>Choose from our most loved travel destinations around the world.</p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Card -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="./images/destinationsImages/paris.jfif" alt="">
+                            <span class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                4.9
+                            </span>
+                            <button class="favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                        </div>
+                        <div class="destination-content">
+                            <h4>Paris, France</h4>
+                            <p class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Europe
+                            </p>
+
+                            <div class="trip-info">
+
+                                <span>
+                                    <i class="fa-solid fa-calendar"></i>
+                                    4 Days
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-hotel"></i>
+                                    Hotel
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-plane"></i>
+                                    Flight
+                                </span>
+
+                            </div>
+
+                            <p class="description">
+                                Discover romantic streets, iconic monuments and unforgettable experiences.
+                            </p>
+
+                            <div class="card-footer">
+
+                                <div>
+                                    <small>Starting From</small>
+
+                                    <h5>$899</h5>
+                                </div>
+
+                                <a href="DestinationsDetail.html" class="details-btn">
+
+                                    View Details
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="./images/destinationsImages/china.jfif" alt="">
+                            <span class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                5.9
+                            </span>
+                            <button class="favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                        </div>
+                        <div class="destination-content">
+                            <h4>Guizhou, China</h4>
+                            <p class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Asia
+                            </p>
+
+                            <div class="trip-info">
+
+                                <span>
+                                    <i class="fa-solid fa-calendar"></i>
+                                    4 Days
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-hotel"></i>
+                                    Hotel
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-plane"></i>
+                                    Flight
+                                </span>
+
+                            </div>
+
+                            <p class="description">
+                                Discover long path streets, iconic monuments and unforgettable experiences.
+                            </p>
+
+                            <div class="card-footer">
+
+                                <div>
+                                    <small>Starting From</small>
+
+                                    <h5>$899</h5>
+                                </div>
+
+                                <a href="DestinationsDetail.html" class="details-btn">
+
+                                    View Details
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="./images/destinationsImages/İstanbul.jfif" alt="">
+                            <span class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                9.9
+                            </span>
+                            <button class="favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                        </div>
+                        <div class="destination-content">
+                            <h4>Istanbul, Turkey</h4>
+                            <p class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Europe
+                            </p>
+
+                            <div class="trip-info">
+
+                                <span>
+                                    <i class="fa-solid fa-calendar"></i>
+                                    6 Days
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-hotel"></i>
+                                    Hotel
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-plane"></i>
+                                    Flight
+                                </span>
+
+                            </div>
+
+                            <p class="description">
+                                Discover breath taking places, iconic monuments and unforgettable experiences.
+                            </p>
+
+                            <div class="card-footer">
+
+                                <div>
+                                    <small>Starting From</small>
+
+                                    <h5>$999</h5>
+                                </div>
+
+                                <a href="DestinationsDetail.html" class="details-btn">
+                                    View Details
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="./images/destinationsImages/london.jpg" alt="">
+                            <span class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                9.9
+                            </span>
+                            <button class="favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                        </div>
+                        <div class="destination-content">
+                            <h4>London, England</h4>
+                            <p class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Europe
+                            </p>
+
+                            <div class="trip-info">
+
+                                <span>
+                                    <i class="fa-solid fa-calendar"></i>
+                                    6 Days
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-hotel"></i>
+                                    Hotel
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-plane"></i>
+                                    Flight
+                                </span>
+
+                            </div>
+
+                            <p class="description">
+                                Discover old money styles, iconic monuments and unforgettable experiences.
+                            </p>
+
+                            <div class="card-footer">
+
+                                <div>
+                                    <small>Starting From</small>
+
+                                    <h5>$899</h5>
+                                </div>
+
+                                <a href="DestinationsDetail.html" class="details-btn">
+                                    View Details
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="destination-card">
+                        <div class="destination-img">
+                            <img src="./images/destinationsImages/sweden.jfif" alt="">
+                            <span class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                9.9
+                            </span>
+                            <button class="favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                        </div>
+                        <div class="destination-content">
+                            <h4>Stockholm, Sweden</h4>
+                            <p class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Europe
+                            </p>
+
+                            <div class="trip-info">
+
+                                <span>
+                                    <i class="fa-solid fa-calendar"></i>
+                                    10 Days
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-hotel"></i>
+                                    Hotel
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-plane"></i>
+                                    Flight
+                                </span>
+
+                            </div>
+
+                            <p class="description">
+                                Discover amazing resting places, iconic monuments and unforgettable experiences.
+                            </p>
+
+                            <div class="card-footer">
+
+                                <div>
+                                    <small>Starting From</small>
+
+                                    <h5>$699</h5>
+                                </div>
+
+                                <a href="DestinationsDetail.html" class="details-btn">
+                                    View Details
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+
+    <div class="container">
+
+        <div class="newsletter-box">
+
+            <div class="travel-icon plane-one">
+                <i class="fa-solid fa-plane"></i>
+            </div>
+
+            <div class="travel-icon globe">
+                <i class="fa-solid fa-earth-americas"></i>
+            </div>
+
+            <div class="travel-icon suitcase">
+                <i class="fa-solid fa-suitcase"></i>
+            </div>
+
+            <span class="newsletter-subtitle">
+                Stay Inspired
+            </span>
+
+            <h2>
+                Get Travel Deals & Destination Updates
+            </h2>
+
+            <p>
+                Subscribe to receive exclusive travel offers,
+                destination guides and exciting adventures delivered
+                directly to your inbox.
+            </p>
+
+            <form class="newsletter-form">
+
+                <input
+                    type="email"
+                    placeholder="Enter your email address">
+
+                <button type="submit">
+
+                    Subscribe
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-4">
+                <!-- Brand -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" class="footer-brand">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        Tourify
+                    </a>
+
+                    <p class="footer-text">
+                        Explore the world with unforgettable journeys.
+                        Discover amazing destinations and create memories
+                        that last forever.
+                    </p>
+
+
+                    <div class="social-links">
+
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+
+                    <h5>Quick Links</h5>
+
+                    <ul>
+
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Explore -->
+                <div class="col-lg-3 col-md-6">
+
+                    <h5>Explore</h5>
+
+                    <ul>
+
+                        <li>
+                            <a href="destinations.html">
+                                Destinations
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="destination-details.html">
+                                Destination Details
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="tour-packages.html">
+                                Tour Packages
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="404.html">
+                                404 Page
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="col-lg-3 col-md-6">
+
+                    <h5>Contact</h5>
+
+                    <ul class="contact-info">
+
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Herat, Afghanistan
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            info@tourify.com
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            +93 700 000 000
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="footer-bottom">
+                <p>
+                    © 2026 Tourify. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".destinationSwiper", {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            loop: true,
+
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1.2,
+                },
+                576: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 4,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
