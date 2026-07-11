@@ -1,226 +1,918 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-     <link rel="stylesheet" href="./CSS/Style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/Style.css" />
     <title>Tourify</title>
-    
-</head>
-<body>
-   <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
-    <div class="container">
-
+  </head>
+  <body>
+    <!------------- NavBar Section ------------>
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+      <div class="container">
         <a class="navbar-brand fw-bold" href="index.html">
-            <i class="fa-solid fa-earth-americas"></i>
-            Tourify
+          <i class="fa-solid fa-earth-americas"></i>
+          Tourify
         </a>
 
-        <button class="navbar-toggler border-0 shadow-none" type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav">
-
-            <span class="navbar-toggler-icon"></span>
-
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
 
-            <ul class="navbar-nav mx-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Destinations
+              </a>
 
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="Destinations.html"
+                    >Destinations
+                  </a>
                 </li>
 
-                <li class="nav-item dropdown">
-
-                    <a class="nav-link dropdown-toggle"
-                        href="#"
-                        data-bs-toggle="dropdown"> 
-                        Destinations
-                    </a>
-
-                    <ul class="dropdown-menu">
-
-                        <li>
-                            <a class="dropdown-item" href="Destinations.html">Destinations </a>
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item" href="DestinationsDetail.html">Destination Details</a>
-                        </li>
-
-                    </ul>
+                <li>
+                  <a class="dropdown-item" href="DestinationsDetail.html"
+                    >Destination Details</a
+                  >
                 </li>
+              </ul>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="TourPackages.html">Tour Packages </a>
-                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="TourPackages.html">Tour Packages </a>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="Gallery.html">Gallery </a>
-                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Gallery.html">Gallery </a>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="About.html">About</a>
-                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About</a>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="Contact.html">Contact</a>
-                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="Notfound.html">404</a>
-                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Notfound.html">404</a>
+            </li>
+          </ul>
 
-            </ul>
-
-            <a href="#" class="book-btn"> Book Now</a>
+          <a href="#" class="book-btn"> Book Now</a>
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
 
-<footer class="footer">
-    <div class="container">
-        <div class="row gy-4">
-            <!-- Brand -->
-            <div class="col-lg-4 col-md-6">
-                <a href="#" class="footer-brand">
-                    <i class="fa-solid fa-earth-americas"></i>
-                    Tourify
+    <!-- ================= Hero Section ================= -->
+    <section class="hero-slider">
+      <div
+        id="heroCarousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+        data-bs-interval="2000"
+      >
+        <!-- Indicators -->
+
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="1"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="2"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="3"
+          ></button>
+        </div>
+
+        <!-- Slides -->
+
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+
+          <div class="carousel-item active">
+            <img
+              src="./assets/img/hero3.jpg"
+              class="d-block w-100"
+              alt="Beautiful travel destination"
+            />
+
+            <div class="hero-overlay"></div>
+
+            <div class="carousel-caption">
+              <span class="hero-subtitle"> Discover The World </span>
+
+              <h1 class="hero-title">
+                Your Journey Begins With
+                <span>Tourify</span>
+              </h1>
+
+              <p class="hero-text">
+                Explore breathtaking destinations, unforgettable adventures and
+                unique travel experiences around the world.
+              </p>
+
+              <div class="hero-buttons">
+                <a href="Destinations.html" class="btn hero-btn-primary">
+                  Explore Destinations
                 </a>
 
-                <p class="footer-text">
-                    Explore the world with unforgettable journeys.
-                    Discover amazing destinations and create memories
-                    that last forever.
+                <a href="TourPackages.html" class="btn hero-btn-secondary">
+                  View Tours
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!----second slider-->
+          <div class="carousel-item active">
+            <img
+              src="./assets/img/hero4.jpg"
+              class="d-block w-100"
+              alt="Beautiful travel destination"
+            />
+
+            <div class="hero-overlay"></div>
+
+            <div class="carousel-caption">
+              <span class="hero-subtitle"> Discover The World </span>
+
+              <h1 class="hero-title">
+                Your Journey Begins With
+                <span>Tourify</span>
+              </h1>
+
+              <p class="hero-text">
+                Explore breathtaking destinations, unforgettable adventures and
+                unique travel experiences around the world.
+              </p>
+
+              <div class="hero-buttons">
+                <a href="Destinations.html" class="btn hero-btn-primary">
+                  Explore Destinations
+                </a>
+
+                <a href="TourPackages.html" class="btn hero-btn-secondary">
+                  View Tours
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-----Third slider ---->
+          <div class="carousel-item active">
+            <img
+              src="./assets/img/hero7.jpg"
+              class="d-block w-100"
+              alt="Beautiful travel destination"
+            />
+
+            <div class="hero-overlay"></div>
+
+            <div class="carousel-caption">
+              <span class="hero-subtitle"> Discover The World </span>
+
+              <h1 class="hero-title">
+                Your Journey Begins With
+                <span>Tourify</span>
+              </h1>
+
+              <p class="hero-text">
+                Explore breathtaking destinations, unforgettable adventures and
+                unique travel experiences around the world.
+              </p>
+
+              <div class="hero-buttons">
+                <a href="Destinations.html" class="btn hero-btn-primary">
+                  Explore Destinations
+                </a>
+
+                <a href="TourPackages.html" class="btn hero-btn-secondary">
+                  View Tours
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <!------Fourth lider ----->
+          <div class="carousel-item active">
+            <img
+              src="./assets/img/hero5.jpg"
+              class="d-block w-100"
+              alt="Beautiful travel destination"
+            />
+
+            <div class="hero-overlay"></div>
+
+            <div class="carousel-caption">
+              <span class="hero-subtitle"> Discover The World </span>
+
+              <h1 class="hero-title">
+                Your Journey Begins With
+                <span>Tourify</span>
+              </h1>
+
+              <p class="hero-text">
+                Explore breathtaking destinations, unforgettable adventures and
+                unique travel experiences around the world.
+              </p>
+
+              <div class="hero-buttons">
+                <a href="Destinations.html" class="btn hero-btn-primary">
+                  Explore Destinations
+                </a>
+
+                <a href="TourPackages.html" class="btn hero-btn-secondary">
+                  View Tours
+                </a>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+
+        <!-- Previous Button -->
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <!-- Next Button -->
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ================= End Hero Slider ================= -->
+
+    <!-- ================= Popular Destinations ================= -->
+
+    <section class="destinations py-5">
+      <div class="container">
+        <div class="section-title text-center mb-5">
+          <span class="section-subtitle"> Top Places </span>
+
+          <h2>Popular Destinations</h2>
+
+          <p>
+            Discover some of the world's most breathtaking places, carefully
+            selected for unforgettable travel experiences.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-card">
+              <img
+                src="./assets/img/All things in Utah _ Bryce Canyon National Park in Utah 😍 _ Facebook.jfif"
+                alt="Paris"
+              />
+
+              <div class="destination-content">
+                <small>USA</small>
+
+                <h4>Utah</h4>
+
+                <p>
+                  Bryce Canyon is famouse for its unique geological structures
+                  called hoodoos, which are tall, thin rock spires formed by
+                  erosion.
                 </p>
 
-
-                <div class="social-links">
-
-                    <a href="#">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-
-                </div>
-
+                <a href="DestinationsDetail.html" class="destination-btn">
+                  View Details
+                </a>
+              </div>
             </div>
+          </div>
 
+          <!-- Card 2 -->
 
-            <!-- Quick Links -->
-            <div class="col-lg-2 col-md-6">
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-card">
+              <img
+                src="./assets/img/Climbing China's Avatar Mountain in Zhangjiajie National Forest Park - Global Girl Travels.jfif"
+                alt="Bali"
+              />
 
-                <h5>Quick Links</h5>
+              <div class="destination-content">
+                <small>China</small>
 
-                <ul>
+                <h4>Zhangjiajie</h4>
 
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
+                <p>
+                  Climbing the trails in Zhangjiajie National Forest Park offers
+                  spectacular, close-up views of the soaring quartz-sandstone
+                  pillars.
+                </p>
 
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-
-                    <li>
-                        <a href="gallery.html">Gallery</a>
-                    </li>
-
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-
-                </ul>
-
+                <a href="DestinationsDetail.html" class="destination-btn">
+                  View Details
+                </a>
+              </div>
             </div>
+          </div>
 
+          <!-- Card 3 -->
 
-            <!-- Explore -->
-            <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-card">
+              <img
+                src="./assets/img/The Pyramids of Giza, Egypt.jfif"
+                alt="Santorini"
+              />
 
-                <h5>Explore</h5>
+              <div class="destination-content">
+                <small>Eygpt</small>
 
-                <ul>
+                <h4>Giza</h4>
 
-                    <li>
-                        <a href="destinations.html">
-                            Destinations
-                        </a>
-                    </li>
+                <p>
+                  The Pyramids of Giza were built as monumental rombs for the
+                  ancient pharaohs to prepare them for the afterlife.
+                </p>
 
-                    <li>
-                        <a href="destination-details.html">
-                            Destination Details
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="tour-packages.html">
-                            Tour Packages
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="404.html">
-                            404 Page
-                        </a>
-                    </li>
-
-                </ul>
-
+                <a href="DestinationsDetail.html" class="destination-btn">
+                  View Details
+                </a>
+              </div>
             </div>
+          </div>
 
+          <!-- Card 4 -->
 
-            <!-- Contact -->
-            <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-card">
+              <img
+                src="./assets/img/download - 2026-07-10T022548.538.jfif"
+                alt="Dubai"
+              />
 
-                <h5>Contact</h5>
+              <div class="destination-content">
+                <small>China</small>
 
-                <ul class="contact-info">
+                <h4>Beijing</h4>
 
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        Herat, Afghanistan
-                    </li>
+                <p>
+                  The Great Wall of China is an ancient military fortification
+                  that stretches over 21,000 KM across the northern borders of
+                  China.
+                </p>
 
-                    <li>
-                        <i class="fa-solid fa-envelope"></i>
-                        info@tourify.com
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-phone"></i>
-                        +93 700 000 000
-                    </li>
-                </ul>
+                <a href="DestinationsDetail.html" class="destination-btn">
+                  View Details
+                </a>
+              </div>
             </div>
+          </div>
+
+          <!-- Card 5 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-card">
+              <img
+                src="./assets/img/download - 2026-07-10T022712.779.jfif"
+                alt="Kyoto"
+              />
+
+              <div class="destination-content">
+                <small>France</small>
+
+                <h4>Paris</h4>
+
+                <p>
+                  Experience romance, iconic landmarks, and timeless
+                  architecture in the City of Light.
+                </p>
+
+                <a href="DestinationsDetail.html" class="destination-btn">
+                  View Details
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="destination-card">
+              <img
+                src="./assets/img/download - 2026-07-10T022715.145.jfif"
+                alt="Switzerland"
+              />
+
+              <div class="destination-content">
+                <small>Switzerland</small>
+
+                <h4>Swiss Alps</h4>
+
+                <p>
+                  Snow-covered mountains, crystal lakes, and breathtaking alpine
+                  scenery.
+                </p>
+
+                <a href="DestinationsDetail.html" class="destination-btn">
+                  View Details
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= End Destinations ================= -->
+
+    <!-- ================= Featured Tours ================= -->
+
+    <section class="featured-tours py-5">
+      <div class="container">
+        <div class="section-title text-center mb-5">
+          <span class="section-subtitle"> Featured Tours </span>
+
+          <h2>Best Tour Packages</h2>
+
+          <p>
+            Carefully designed travel experiences that combine adventure,
+            comfort, and unforgettable memories.
+          </p>
         </div>
 
+        <div class="row g-4">
+          <!-- Tour 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="tour-card">
+              <div class="tour-image">
+                <img
+                  src="./assets/img/Best experiences in Egypt.jfif"
+                  alt="Bali Tour"
+                />
 
-        <div class="footer-bottom">
-            <p>
-                © 2026 Tourify. All Rights Reserved.
+                <span class="tour-price"> $799 </span>
+              </div>
+
+              <div class="tour-content">
+                <span class="tour-duration">
+                  <i class="fa-regular fa-clock"></i>
+                  7 Days
+                </span>
+
+                <h4>Eygpt</h4>
+
+                <p>
+                  Discover tropical beaches, temples, waterfalls and luxury
+                  resorts.
+                </p>
+
+                <a href="TourPackages.html" class="tour-btn"> Book Now </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tour 2 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="tour-card">
+              <div class="tour-image">
+                <img
+                  src="./assets/img/download - 2026-07-10T022712.779.jfif"
+                  alt="Paris Tour"
+                />
+
+                <span class="tour-price"> $1099 </span>
+              </div>
+
+              <div class="tour-content">
+                <span class="tour-duration">
+                  <i class="fa-regular fa-clock"></i>
+                  5 Days
+                </span>
+
+                <h4>Paris Highlights</h4>
+
+                <p>
+                  Visit the Eiffel Tower, museums, cafés and beautiful streets.
+                </p>
+
+                <a href="TourPackages.html" class="tour-btn"> Book Now </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tour 3 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="tour-card">
+              <div class="tour-image">
+                <img
+                  src="./assets/img/download - 2026-07-10T022715.145.jfif"
+                  alt="Swiss Tour"
+                />
+
+                <span class="tour-price"> $1299 </span>
+              </div>
+
+              <div class="tour-content">
+                <span class="tour-duration">
+                  <i class="fa-regular fa-clock"></i>
+                  10 Days
+                </span>
+
+                <h4>Swiss Adventure</h4>
+
+                <p>Explore snowy mountains, lakes and charming villages.</p>
+
+                <a href="TourPackages.html" class="tour-btn"> Book Now </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= End Featured Tours ================= -->
+
+    <!-- ================= Why Choose Tourify ================= -->
+
+    <section class="why-tourify py-5">
+      <div class="container">
+        <div class="section-title text-center mb-5">
+          <span class="section-subtitle"> Why Choose Us </span>
+
+          <h2>Why Choose Tourify?</h2>
+
+          <p>
+            We make every journey memorable by combining comfort, affordability,
+            and unforgettable experiences.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Feature 1 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-solid fa-earth-americas"></i>
+              </div>
+
+              <h4>Best Destinations</h4>
+
+              <p>
+                Carefully selected destinations across the world for
+                unforgettable travel experiences.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-solid fa-tags"></i>
+              </div>
+
+              <h4>Affordable Prices</h4>
+
+              <p>
+                Enjoy premium travel packages at competitive prices without
+                compromising quality.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-solid fa-user-group"></i>
+              </div>
+
+              <h4>Professional Guides</h4>
+
+              <p>
+                Travel with experienced local guides who know every destination
+                inside and out.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 4 -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-solid fa-headset"></i>
+              </div>
+
+              <h4>24/7 Support</h4>
+
+              <p>
+                Our support team is available anytime to help make your journey
+                smooth and worry-free.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= End Why Choose ================= -->
+
+    <!-- ================= Testimonials ================= -->
+
+    <section class="testimonials py-5">
+      <div class="container">
+        <div class="section-title text-center mb-5">
+          <span class="section-subtitle"> Testimonials </span>
+
+          <h2>What Our Travelers Say</h2>
+
+          <p>
+            Real experiences from travelers who explored the world with Tourify.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Testimonial 1 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="customer-image">
+                <img src="./assets/img/customer (2).jpg" alt="Customer" />
+              </div>
+
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <p>
+                "Tourify made my vacation unforgettable. Everything was
+                organized perfectly and the guides were amazing."
+              </p>
+
+              <h4>Emma Wilson</h4>
+
+              <span> United Kingdom </span>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="customer-image">
+                <img src="./assets/img/customer (1).jpg" alt="Customer" />
+              </div>
+
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+
+              <p>
+                "The Bali tour was incredible. Beautiful locations, friendly
+                guides, and excellent service."
+              </p>
+
+              <h4>Daniel Smith</h4>
+
+              <span> Canada </span>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="customer-image">
+                <img src="./assets/img/customer (3).jpg" alt="Customer" />
+              </div>
+
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <p>
+                "I loved every moment of my journey. Tourify helped me discover
+                places I never imagined."
+              </p>
+
+              <h4>Sophia Martinez</h4>
+
+              <span> Spain </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA Section ================= -->
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content text-center">
+          <span class="cta-subtitle"> Start Your Journey </span>
+
+          <h2>Ready For Your Next Adventure?</h2>
+
+          <p>
+            Explore amazing destinations, discover new cultures, and create
+            unforgettable memories with Tourify.
+          </p>
+
+          <a href="Destinations.html" class="cta-btn"> Explore Now </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= End CTA Section ================= -->
+
+    <!-- ================= End Testimonials ================= -->
+
+    <!------------- Footer Section ------------>
+    <footer class="footer">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Brand -->
+          <div class="col-lg-4 col-md-6">
+            <a href="#" class="footer-brand">
+              <i class="fa-solid fa-earth-americas"></i>
+              Tourify
+            </a>
+
+            <p class="footer-text">
+              Explore the world with unforgettable journeys. Discover amazing
+              destinations and create memories that last forever.
             </p>
 
+            <div class="social-links">
+              <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+
+              <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-2 col-md-6">
+            <h5>Quick Links</h5>
+
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+
+              <li>
+                <a href="about.html">About</a>
+              </li>
+
+              <li>
+                <a href="gallery.html">Gallery</a>
+              </li>
+
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Explore -->
+          <div class="col-lg-3 col-md-6">
+            <h5>Explore</h5>
+
+            <ul>
+              <li>
+                <a href="destinations.html"> Destinations </a>
+              </li>
+
+              <li>
+                <a href="destination-details.html"> Destination Details </a>
+              </li>
+
+              <li>
+                <a href="tour-packages.html"> Tour Packages </a>
+              </li>
+
+              <li>
+                <a href="404.html"> 404 Page </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-lg-3 col-md-6">
+            <h5>Contact</h5>
+
+            <ul class="contact-info">
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                Herat, Afghanistan
+              </li>
+
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                info@tourify.com
+              </li>
+
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                +93 700 000 000
+              </li>
+            </ul>
+          </div>
         </div>
 
-    </div>
-</footer>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+        <div class="footer-bottom">
+          <p>© 2026 Tourify. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
