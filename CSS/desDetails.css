@@ -734,6 +734,242 @@
         transform:translate(50px,40px);
     }
 }
+/*==== location==== */
+.location-section{
+    background:var(--background-color);
+}
+
+.map-wrapper{
+    height:480px;
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    position:relative;
+
+}
+.map-wrapper iframe{
+    width:100%;
+    height:100%;
+    border:0;
+}
+.location-section h2{
+    font-size:42px;
+    font-weight:800;
+    color:var(--heading-color);
+}
+
+.location-section h2 span{
+    color:var(--primary-color);
+}
+
+.location-section p{
+
+    color:var(--text-color);
+    line-height:1.8;
+}
+.location-info{
+    margin-top:30px;
+}
+.location-item{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    padding:15px;
+    margin-bottom:15px;
+    background:white;
+    border-radius:18px;
+   transition:var(--transition);
+
+}
+
+.location-item:hover{
+    transform:translateX(10px);
+    box-shadow:var(--shadow);
+}
+
+.location-icon{
+    min-width:55px;
+    height:55px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--section-bg);
+    color:var(--primary-color);
+    border-radius:50%;
+    font-size:22px;
+}
+.location-item h6{
+    margin:0;
+    color:var(--dark-color);
+    font-weight:700;
+}
+.location-item p{
+    margin:5px 0 0;
+}
+
+.location-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 35px;
+    background:var(--dark-color);
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:var(--transition);
+}
+.location-btn:hover{
+
+   background:var(--primary-color);
+    transform:translateY(-5px);
+}
+@media(max-width:992px){
+    .map-wrapper{
+        height:400px;
+    }
+    .location-section h2{
+
+        font-size:34px;
+    }
+}
+
+@media(max-width:768px){
+    .location-section{
+        text-align:center;
+
+    }
+    .map-wrapper{
+        height:350px;
+
+    }
+
+
+    .location-item{
+        text-align:left;
+
+    }
+    .location-btn{
+
+      width:100%;
+
+    }
+}
+/* Traveler Reviews */
+
+.traveler-reviews{
+
+    position:relative;
+
+    background:
+    linear-gradient(
+        rgba(40,54,24,.75),
+        rgba(40,54,24,.75)
+    ),
+    url("../images/destinationsImages/travelers.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    overflow:hidden;
+}
+
+
+.traveler-reviews h2{
+    color:var(--secondary-color);
+    font-size:42px;
+    font-weight:800;
+}
+.traveler-reviews p{
+    color: var(--light-text);
+}
+
+.review-card{
+    position:relative;
+    background:white;
+    padding:35px 30px;
+    border-radius:30px;
+    height:100%;
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+    overflow:hidden;
+}
+
+.review-card:hover{
+    transform:translateY(-12px);
+}
+
+.review-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+    background:
+    linear-gradient(
+        90deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+
+}
+
+.review-top{
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+.review-top img{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid var(--secondary-color);
+}
+
+.review-top h5{
+    margin:0;
+    color:var(--secondary-color);
+    font-weight:700;
+
+}
+
+.review-top span{
+    color:#777;
+    font-size:14px;
+}
+
+.stars{
+    margin:25px 0 15px;
+}
+.stars i{
+    color:var(--secondary-color);
+    margin-right:3px;
+}
+.review-card p{
+    color:var(--text-color);
+    line-height:1.8;
+    font-style:italic;
+}
+
+.quote-icon{
+    position:absolute;
+    right:25px;
+    bottom:20px;
+    font-size:45px;
+    color:rgba(188,108,37,.15);
+}
+
+@media(max-width:768px){
+    .traveler-reviews h2{
+        font-size:32px;
+    }
+    .review-card{
+        padding:30px 20px;
+
+    }
+
+}
 /* ====FOOTER==== */
 .footer{
     background:linear-gradient(
