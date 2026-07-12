@@ -22,143 +22,138 @@
 
     --transition: all .3s ease;
 }
-
-
 /* ====NAVBAR==== */
-
-.custom-navbar {
-    background: linear-gradient(135deg,
-            #606C38,
-            #8A9A5B,
-            #DDA15E);
-
-    padding: 18px 0;
-    box-shadow: 0 10px 30px rgba(40, 54, 24, .15);
-    border-bottom: 1px solid rgba(40, 54, 24, .15);
-
+.custom-navbar{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(255,255,255,.15);
+    padding:20px 0;
+    transition:.4s;
 }
-
-.custom-navbar::before {
+.custom-navbar::before{
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg,
-            rgba(221, 161, 94, .08),
-            transparent,
-            rgba(221, 161, 94, .08));
+    background: linear-gradient(
+        90deg,
+        rgba(221,161,94,.08),
+        transparent,
+        rgba(221,161,94,.08)
+    );
     pointer-events: none;
 }
 
-.navbar-brand {
-    color: var(--light-text);
-    font-size: 1.7rem;
-    font-weight: 700;
+.navbar-brand{
+    color:var(--light-text);
+    font-size:1.7rem;
+   font-weight:700;
 }
 
-.navbar-brand:hover {
-    color: var(--secondary-color);
+.navbar-brand:hover{
+    color:var(--secondary-color);
 }
 
-.navbar-nav {
-    gap: 15px;
+.navbar-nav{
+    gap:15px;
 }
 
-.nav-link {
-    color: var(--light-text);
-    font-weight: 500;
-    position: relative;
-    transition: .35s;
+.nav-link{
+    color:var(--light-text);
+    font-weight:500;
+    position:relative;
+    transition:.35s;
 }
 
-.nav-link:hover {
-    color: var(--secondary-color);
-    transform: translateY(-3px);
+.nav-link:hover{
+    color:var(--secondary-color);
+    transform:translateY(-3px);
 }
 
-.nav-link::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -8px;
-    width: 0;
-    height: 3px;
-    border-radius: 30px;
-    background: var(--secondary-color);
-    transition: .4s;
-    transform: translateX(-50%);
+.nav-link::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:-8px;
+    width:0;
+    height:3px;
+    border-radius:30px;
+    background:var(--secondary-color);
+    transition:.4s;
+    transform:translateX(-50%);
 }
 
 .nav-link:hover::after,
-
-.nav-link.active::after {
-
-    width: 70%;
-
+.nav-link.active::after{
+    width:70%;
+}
+.nav-link:hover,
+.nav-link.active{
+    color: var(--secondary-color) !important;
+    transform: translateY(-3px);
+}
+.dropdown-menu{
+    border:none;  
+    border-radius:18px;  
+    overflow:hidden;  
+    padding:10px;
+    box-shadow:var(--shadow);  
+    animation:dropdown .35s ease;
 }
 
-.dropdown-menu {
-
-    border: none;
-    border-radius: 18px;
-    overflow: hidden;
-    padding: 10px;
-    box-shadow: var(--shadow);
-    animation: dropdown .35s ease;
+.dropdown-item{
+    border-radius:10px;
+    padding:10px 16px;
+    transition:.3s;
 }
 
-.dropdown-item {
-
-    border-radius: 10px;
-    padding: 10px 16px;
-    transition: .3s;
-
-}
-
-.dropdown-item:hover {
-
-    background: var(--secondary-color);
-    color: white;
-    transform: translateX(5px);
+.dropdown-item:hover{
+    background:var(--secondary-color);
+    color:white;
+    transform:translateX(5px);
 
 }
-
-.book-btn {
-
-    padding: 12px 28px;
-    background: var(--primary-color);
-    color: white;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: .35s;
+.navbar-toggler{
+    border:1px solid rgba(255,255,255,.4);
 }
 
-.book-btn:hover {
-
-    background: var(--secondary-color);
-    transform: translateY(-4px);
-    color: white;
+.navbar-toggler-icon{
+    filter: invert(1);
 }
 
-@keyframes dropdown {
+.book-btn{
+    padding:12px 28px;
+    background:var(--primary-color);
+    color:white;
+    border-radius:50px;
+    text-decoration:none;
+    transition:.35s;
+}
 
-    from {
-        opacity: 0;
-        transform: translateY(20px);
+.book-btn:hover{
+    background:var(--secondary-color);
+    transform:translateY(-4px);
+    color:white;
+}
 
+@keyframes dropdown{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
     }
 
-    to {
-
-        opacity: 1;
-        transform: translateY(0);
+    to{
+        opacity:1;
+        transform:translateY(0);
 
     }
-
 }
-
-
-
-
 /* HERO MAIN */
 
 .tour-hero {
@@ -184,11 +179,7 @@
     position: absolute;
     inset: 0;
 
-    background:
-        linear-gradient(90deg,
-            rgba(40, 54, 24, 0.95),
-            rgba(40, 54, 24, 0.75),
-            rgba(40, 54, 24, 0.45));
+     background: linear-gradient(rgba(40, 54, 24, 0.75), rgba(40, 54, 24, 0.55));
 }
 
 
