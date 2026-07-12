@@ -374,17 +374,11 @@
 
 .carousel-caption {
   position: absolute;
-
   top: 50%;
-
   left: 10%;
-
   transform: translateY(-50%);
-
   right: auto;
-
   text-align: left;
-
   max-width: 650px;
 }
 
@@ -950,6 +944,7 @@
 
 .feature-card p {
   margin-bottom: 0;
+  color: #d68f3ee7;
 }
 
 .section-title {
