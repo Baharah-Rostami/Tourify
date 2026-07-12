@@ -620,7 +620,7 @@
 }
 
 .destination-content h4 {
-  color: var(--heading-color);
+  color: var(--primary-color);
 
   margin: 12px 0;
 }
@@ -653,27 +653,90 @@
 
 /* ========== FEATURED TOURS  ============== */
 
-.featured-tours {
-  background: var(--section-bg);
+.wave-container {  
+  height: 40vh;
+  background-color: #606c38;
+  position: relative;
 }
+
+.wave-container::before {   
+  content: "";
+  width: 100%;
+  height: 137px;
+  position: absolute;
+  bottom: -0.3%;
+  left: 0;
+  background-size: auto;
+  background-repeat: repeat no-repeat;
+  background-position: 37vw bottom;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 1C19.5523 3 32.2291 5 51.5 9C104.5 19 200 43 300 65C400 88 500 111 600 102C700 93 800 53 900 30C987.526 5 1085.36 -1 1150 0C1169.54 -1 1180.49 0 1200 1V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V1.98128Z' fill='%23FFF5EE'/></svg>");
+}
+
+@media(max-width:850px) {
+  .wave-container::before {    
+    height: 68.5px
+  }  
+}
+
+.featured-tours {
+  background: #606c38;
+
+  padding: 100px 0;
+}
+
+.section-subtitle {
+  color: var(--heading-color);
+
+  text-transform: uppercase;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 15px;
+}
+
+.section-title {
+  color: var(--primary-color);
+
+  font-size: 3rem;
+
+  font-weight: 700;
+
+  margin-bottom: 20px;
+}
+
+.section-description {
+  max-width: 650px;
+
+  margin: auto;
+
+  color: var(--light-text);
+}
+
+/* Card */
 
 .tour-card {
   background: white;
 
-  border-radius: 20px;
+  border-radius: 24px;
 
   overflow: hidden;
 
-  box-shadow: var(--shadow);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 
-  transition: var(--transition);
+  transition: 0.45s;
 
-  height: 100%;
+  position: relative;
 }
 
 .tour-card:hover {
-  transform: translateY(-12px);
+  transform: translateY(-18px);
+
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.18);
 }
+
+/* Image */
 
 .tour-image {
   position: relative;
@@ -688,69 +751,131 @@
 
   object-fit: cover;
 
-  transition: 0.5s;
+  transition: 0.6s;
 }
 
-.tour-card:hover img {
-  transform: scale(1.08);
+.tour-card:hover .tour-image img {
+  transform: scale(1.12);
 }
 
-.tour-price {
+/* Badge */
+
+.tour-badge {
   position: absolute;
 
-  top: 20px;
+  top: 18px;
 
-  right: 20px;
+  left: 18px;
 
   background: var(--primary-color);
 
   color: white;
 
-  padding: 8px 16px;
+  padding: 8px 18px;
 
   border-radius: 30px;
+
+  font-size: 0.85rem;
 
   font-weight: 600;
 }
 
+/* Content */
+
 .tour-content {
-  padding: 25px;
+  padding: 28px;
 }
 
-.tour-duration {
+.tour-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 18px;
+}
+
+.tour-top h4 {
+  color: var(--heading-color);
+
+  font-size: 1.45rem;
+
+  margin: 0;
+}
+
+.tour-rating {
+  color: #f4b400;
+
+  font-weight: 700;
+}
+
+.tour-content p {
+  color: var(--text-color);
+
+  margin-bottom: 25px;
+}
+
+/* Info */
+
+.tour-info {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-bottom: 28px;
+
   color: var(--accent-color);
 
   font-size: 0.95rem;
 }
 
-.tour-content h4 {
-  margin: 15px 0;
-
-  color: var(--heading-color);
+.tour-info i {
+  margin-right: 8px;
 }
 
+/* Bottom */
+
+.tour-bottom {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.tour-bottom h3 {
+  color: var(--primary-color);
+
+  font-size: 2rem;
+
+  margin: 0;
+}
+
+/* Button */
+
 .tour-btn {
-  display: inline-block;
-
-  margin-top: 10px;
-
-  background: var(--primary-color);
-
-  color: white;
-
-  padding: 12px 28px;
+  padding: 12px 26px;
 
   border-radius: 40px;
 
   text-decoration: none;
 
-  transition: var(--transition);
+  background: var(--primary-color);
+
+  color: white;
+
+  transition: 0.35s;
+
+  font-weight: 600;
 }
 
 .tour-btn:hover {
   background: var(--secondary-color);
 
   color: white;
+
+  transform: translateY(-3px);
 }
 
 /* ===========================    WHY CHOOSE TOURIFY  ===================================== */
@@ -760,7 +885,7 @@
 }
 
 .feature-card {
-  background: white;
+  background: #606c385b;
 
   padding: 45px 30px;
 
