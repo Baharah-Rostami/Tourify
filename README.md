@@ -3,6 +3,13 @@
 Tourify is a responsive travel and tourism website built as a team project using HTML, CSS, Bootstrap, and JavaScript. The website helps users explore destinations, discover tour packages, and find inspiration for their next adventure through a modern and user-friendly interface.
 
 ---
+## 👥 Team Members
+
+This project was developed collaboratively by:
+
+* Baharah Rostami
+* Samanah Habibi
+* Samira Hakimi
 
 ## ✨ Features
 
@@ -39,7 +46,7 @@ Tourify/
 ├── about.html
 ├── destinations.html
 ├── destination-details.html
-├── packages.html
+├── Tourpackages.html
 ├── gallery.html
 ├── contact.html
 │
@@ -47,8 +54,8 @@ Tourify/
 │   ├── style.css
 │   ├── about.css
 │   ├── destinations.css
-│   ├── destination-details.css
-│   ├── packages.css
+│   ├── desdetails.css
+│   ├── Tourpackages.css
 │   ├── gallery.css
 │   └── contact.css
 │
