@@ -29,42 +29,26 @@
 /* =========================
           NAVBAR
 ========================= */
-
-.custom-navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-
-  background: rgba(255,255,255,.08);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-
-  border-bottom: 1px solid rgba(255,255,255,.15);
-
-  padding: 20px 0;
-  transition: .4s;
+.custom-navbar{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+     background:linear-gradient(
+        135deg,
+        #283618,
+        #354A1F
+    );
+    border-bottom:1px solid rgba(255,255,255,.08);
+    padding:18px 0;
+    transition:.4s;
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
 }
 
-
-.custom-navbar::before {
-  content: "";
-
-  position: absolute;
-  inset: 0;
-
-  background: linear-gradient(
-    90deg,
-    rgba(221,161,94,.08),
-    transparent,
-    rgba(221,161,94,.08)
-  );
-
-  pointer-events: none;
+.custom-navbar::before{
+    display:none;
 }
-
-
 .navbar-brand {
 
   color: var(--light-text);
