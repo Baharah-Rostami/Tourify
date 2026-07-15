@@ -168,11 +168,10 @@
 .hero-overlay{
     position:absolute;
     inset:0;
-    background:linear-gradient(
-        to bottom,
-        rgba(0,0,0,.15),
-        rgba(0,0,0,.55)
-    );
+     background:linear-gradient(
+    rgba(40, 54, 24, 0.397),
+    rgba(40,54,24,.55)
+  );
 
 }
 
